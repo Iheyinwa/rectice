@@ -1,7 +1,7 @@
-// export const portfolios = [
-//     {
-//         image: '',
-//         content: '',
-//         stack: ['']
-//     }
-// ]
+export const portfolios = [
+    {
+        image: '',
+        content: '',
+        stack: ['']
+    }
+]

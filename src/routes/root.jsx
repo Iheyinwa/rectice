@@ -24,9 +24,9 @@ export default function Root() {
 
   return (
     <section className="lg:flex justify-between">
-      <section className="lg:w-1/6 h-full lg:h-screen lg:flex lg:justify-center lg:items-center">
-        <aside className="flex justify-evenly items-center lg:flex-col p-4 w-full">
-          <div className="hidden lg:block lg:w-32 lg:h-32 mx-auto">
+      <section className="lg:w-[15%] h-full lg:h-screen lg:flex lg:justify-center lg:items-center bg-black">
+        <aside className="flex justify-evenly items-center lg:flex-col w-full p-4 lg:p-2">
+          <div className="hidden lg:block lg:w-28 lg:h-28 mx-auto">
             <img
               src={ice}
               alt="ice"
@@ -35,10 +35,10 @@ export default function Root() {
               className="rounded-full w-full h-full object-cover shadow-lg"
             />
           </div>
-          <h3 className="text-black lg:text-center font-bold text-lg md:text-2xl lg:mt-4 w-full">
+          <h3 className="text-white lg:text-center font-bold text-lg md:text-2xl lg:mt-4 w-full">
             ICE
           </h3>
-          <ul className="text-black text-center hidden lg:flex flex-col gap-4 my-4">
+          <ul className="text-white text-center hidden lg:flex flex-col gap-4 my-4">
             {links.map((link, index) => (
               <NavLink
                 key={index}
@@ -47,7 +47,7 @@ export default function Root() {
                   `text-xl ${
                     isActive
                       ? "font-bold text-[#312F49] text-2xl"
-                      : "text-black"
+                      : "text-[white]"
                   }`
                 }
               >
@@ -59,25 +59,25 @@ export default function Root() {
             <li>
               <FaGithub
                 size={20}
-                className="text-black hover:text-[#dc3435] hover:cursor-pointer"
+                className="text-white hover:text-[#dc3435] hover:cursor-pointer"
               />
             </li>
             <li>
               <FaLinkedinIn
                 size={20}
-                className="text-black hover:text-[#dc3435] hover:cursor-pointer"
+                className="text-white hover:text-[#dc3435] hover:cursor-pointer"
               />
             </li>
             <li>
               <FaTwitter
                 size={20}
-                className="text-black hover:text-[#dc3435] hover:cursor-pointer"
+                className="text-white hover:text-[#dc3435] hover:cursor-pointer"
               />
             </li>
           </ul>
         </aside>
       </section>
-      <div className="lg:w-5/6 bg-[#edebe5]">
+      <div className="lg:w-full bg-[#edebe5]">
         <Outlet />
       </div>
     </section>
